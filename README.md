@@ -72,8 +72,6 @@ the underlying disease.
 </dl>
 
 
-## 
-
 <p class="rubric">Methods</p>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -102,3 +100,14 @@ the underlying disease.
 <tr class="row-odd"><td><p><a class="reference internal" href="#sklearn.linear_model.LogisticRegression.set_params" title="sklearn.linear_model.LogisticRegression.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
 <td><p>Set the parameters of this estimator.</p></td>
 </tr>
+
+
+## Examples
+```
+>>> mc = MonotoneClassifier().fit(X, y)
+>>> mc.predict(X[:2, :])
+array([0, 0])
+>>> clf.predict_proba(X[:2, :])
+array([[9.8...e-01, 1.8...e-02, 1.4...e-08],
+      [9.7...e-01, 2.8...e-02, ...e-08]])
+```
