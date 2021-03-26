@@ -8,6 +8,7 @@ or ordinal assessments by radiologists, are often monotonically associated with 
 the underlying disease. 
 
 
+
 <em class="property">class </em></code><code class="sig-name descname">MonotoneClassifier</code>
 <span class="sig-paren">
   (
@@ -25,15 +26,11 @@ the underlying disease.
 ¶</a></dt>
 
 
-
-
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl>
-<dt><strong>penalty</strong><span class="classifier">{‘l1’, ‘l2’, ‘elasticnet’, ‘none’}, default=’l2’</span></dt><dd><p>Used to specify the norm used in the penalization. The ‘newton-cg’,
-‘sag’ and ‘lbfgs’ solvers support only l2 penalties. ‘elasticnet’ is
-only supported by the ‘saga’ solver. If ‘none’ (not supported by the
-liblinear solver), no regularization is applied.</p>
+<dt><strong>handle</strong><span class="classifier">{'missing', 'complete', 'mean', 'median'}, default=’missing’</span></dt><dd><p>Used to specify the method to deal with missing covariates. 'missing' use EM to handle missing X, which is consistent under MAR; 'complete' delete incomplete examples, which causes bias in MAR;
+'mean' impute missing values by mean of that column; 'median' impute missing values by median of that column</p>
 <div class="versionadded">
 <p><span class="versionmodified added">New in version 0.19: </span>l1 penalty with SAGA solver (allowing ‘multinomial’ + L1)</p>
 </div>
