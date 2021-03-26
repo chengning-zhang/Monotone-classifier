@@ -129,7 +129,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Chengning Zhang** - *Initial work* - [Simpler TAN + Ensemble TAN](https://github.com/chengning-zhang/Simple-TAN-and-Ensemble-TAN)
+* **Lu Mao**, **Chengning Zhang** - *Initial work* - [Monotone Classifier](https://github.com/chengning-zhang/)
 
 ## License
 
