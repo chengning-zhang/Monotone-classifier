@@ -62,9 +62,9 @@ the underlying disease.
 </dd>
 <dt><strong>m_: </strong><span class="classifier">int</span></dt><dd><p>number of x_1....x_m, number of unique observed values of X.</p>
 </dd>
-<dt><strong>AIC_: </strong><span class="classifier">int</span></dt><dd><p> AIC = 2k - 2ln(L), k be the number of estimated parameters in the model, is it the number of point mass or the number of predictors?</p>
+<dt><strong>AIC_: </strong><span class="classifier">int</span></dt><dd><p> AIC = 2k - 2ln(L), k be the number of estimated parameters in the model.</p>
 </dd>
-<dt><strong>BIC_: </strong><span class="classifier">int</span></dt><dd><p> kln(n) - 2ln(L), k be the number of estimated parameters in the model, is it the number of point mass or the number of predictors?</p>
+<dt><strong>BIC_: </strong><span class="classifier">int</span></dt><dd><p> kln(n) - 2ln(L), k be the number of estimated parameters in the model.</p>
 </div>
 </dd>
 </dl>
