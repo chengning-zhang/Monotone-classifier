@@ -70,3 +70,44 @@ the underlying disease.
 </dl>
 </dd>
 </dl>
+
+
+## 
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#sklearn.linear_model.LogisticRegression.decision_function" title="sklearn.linear_model.LogisticRegression.decision_function"><code class="xref py py-obj docutils literal notranslate"><span class="pre">decision_function</span></code></a>(X)</p></td>
+<td><p>Predict confidence scores for samples.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#sklearn.linear_model.LogisticRegression.densify" title="sklearn.linear_model.LogisticRegression.densify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">densify</span></code></a>()</p></td>
+<td><p>Convert coefficient matrix to dense array format.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#sklearn.linear_model.LogisticRegression.fit" title="sklearn.linear_model.LogisticRegression.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X, y[, sample_weight])</p></td>
+<td><p>Fit the model according to the given training data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#sklearn.linear_model.LogisticRegression.get_params" title="sklearn.linear_model.LogisticRegression.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>([deep])</p></td>
+<td><p>Get parameters for this estimator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#sklearn.linear_model.LogisticRegression.predict" title="sklearn.linear_model.LogisticRegression.predict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict</span></code></a>(X)</p></td>
+<td><p>Predict class labels for samples in X.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#sklearn.linear_model.LogisticRegression.predict_log_proba" title="sklearn.linear_model.LogisticRegression.predict_log_proba"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict_log_proba</span></code></a>(X)</p></td>
+<td><p>Predict logarithm of probability estimates.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#sklearn.linear_model.LogisticRegression.predict_proba" title="sklearn.linear_model.LogisticRegression.predict_proba"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict_proba</span></code></a>(X)</p></td>
+<td><p>Probability estimates.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#sklearn.linear_model.LogisticRegression.score" title="sklearn.linear_model.LogisticRegression.score"><code class="xref py py-obj docutils literal notranslate"><span class="pre">score</span></code></a>(X, y[, sample_weight])</p></td>
+<td><p>Return the mean accuracy on the given test data and labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#sklearn.linear_model.LogisticRegression.set_params" title="sklearn.linear_model.LogisticRegression.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
+<td><p>Set the parameters of this estimator.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#sklearn.linear_model.LogisticRegression.sparsify" title="sklearn.linear_model.LogisticRegression.sparsify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sparsify</span></code></a>()</p></td>
+<td><p>Convert coefficient matrix to sparse format.</p></td>
+</tr>
