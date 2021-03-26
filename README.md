@@ -1,9 +1,6 @@
 # Monotone Classifier(MC)
 
-A custom implementation of **Monotone Classifier** in Python 3 that safely interact with scikit-learn Pipelines and model selection tools.
-
-
-<em class="property">class </em><code class="sig-prename descclassname">sklearn.linear_model.</code><code class="sig-name descname">LogisticRegression</code>
+<em class="property">class </em><code class="sig-prename descclassname"></code><code class="sig-name descname">MonotoneClassifier</code>
 <span class="sig-paren">
   (
   </span>
@@ -19,9 +16,10 @@ A custom implementation of **Monotone Classifier** in Python 3 that safely inter
 </span>
 ¶</a></dt>
 
+A custom implementation of `Monotone Classifier` in Python 3 that safely interact with scikit-learn Pipelines and model selection tools.
 
 We develop a statistical framework for training and evaluating binary classification rules that leverage suitable monotonic relationship between the
-predictors and response. **Monotone Classifier** is motivated by problems in diagnostic medicine,
+predictors and response. `Monotone Classifier` is motivated by problems in diagnostic medicine,
 where multiple input variables, whether it be quantitative biomarkers, composite clinical scores,
 or ordinal assessments by radiologists, are often monotonically associated with the probability of
 the underlying disease. 
