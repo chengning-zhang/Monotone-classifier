@@ -13,7 +13,7 @@ the underlying disease.
 <span class="sig-paren">
   (
   </span>
-  <em class="sig-param"><span class="n">tol</span><span class="o">=</span><span class="default_value">1e-6</span></em>, 
+  <em class="sig-param"><span class="n">tol</span><span class="o">=</span><span class="default_value">1e-7</span></em>, 
   <em class="sig-param"><span class="n">max_iter</span><span class="o">=</span><span class="default_value">300</span></em>, 
   <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em>, 
   <em class="sig-param"><span class="n">handle</span><span class="o">=</span><span class="default_value">'missing'</span></em>, 
@@ -50,27 +50,22 @@ the underlying disease.
 
 <dt class="field-even">Attributes</dt>
 <dd class="field-even"><dl>
-<dt><strong>classes_</strong><span class="classifier">ndarray of shape (n_classes, )</span></dt><dd><p>A list of class labels known to the classifier.</p>
 </dd>
-<dt><strong>coef_</strong><span class="classifier">ndarray of shape (1, n_features) or (n_classes, n_features)</span></dt><dd><p>Coefficient of the features in the decision function.</p>
-<p><code class="docutils literal notranslate"><span class="pre">coef_</span></code> is of shape (1, n_features) when the given problem is binary.
-In particular, when <code class="docutils literal notranslate"><span class="pre">multi_class='multinomial'</span></code>, <code class="docutils literal notranslate"><span class="pre">coef_</span></code> corresponds
-to outcome 1 (True) and <code class="docutils literal notranslate"><span class="pre">-coef_</span></code> corresponds to outcome 0 (False).</p>
+<dt><strong>dict_U_</strong><span class="classifier">dict</span></dt><dd><p>dictionary where keys are {x_1,...x_m} and values are point mass of U at x_i.</p>
 </dd>
-<dt><strong>intercept_</strong><span class="classifier">ndarray of shape (1,) or (n_classes,)</span></dt><dd><p>Intercept (a.k.a. bias) added to the decision function.</p>
-<p>If <code class="docutils literal notranslate"><span class="pre">fit_intercept</span></code> is set to False, the intercept is set to zero.
-<code class="docutils literal notranslate"><span class="pre">intercept_</span></code> is of shape (1,) when the given problem is binary.
-In particular, when <code class="docutils literal notranslate"><span class="pre">multi_class='multinomial'</span></code>, <code class="docutils literal notranslate"><span class="pre">intercept_</span></code>
-corresponds to outcome 1 (True) and <code class="docutils literal notranslate"><span class="pre">-intercept_</span></code> corresponds to
-outcome 0 (False).</p>
+<dt><strong>dict_X_</strong><span class="classifier">dict</span></dt><dd><p>dictionary where keys are {x_1,...x_m} and values are point mass of X at x_i.</p>
 </dd>
-<dt><strong>n_iter_</strong><span class="classifier">ndarray of shape (n_classes,) or (1, )</span></dt><dd><p>Actual number of iterations for all classes. If binary or multinomial,
-it returns only 1 element. For liblinear solver, only the maximum
-number of iteration across all classes is given.</p>
-<div class="versionchanged">
-<p><span class="versionmodified changed">Changed in version 0.20: </span>In SciPy &lt;= 1.0.0 the number of lbfgs iterations may exceed
-<code class="docutils literal notranslate"><span class="pre">max_iter</span></code>. <code class="docutils literal notranslate"><span class="pre">n_iter_</span></code> will now report at most <code class="docutils literal notranslate"><span class="pre">max_iter</span></code>.</p>
-</div>
+<dt><strong>n_iter_</strong><span class="classifier">int</span></dt><dd><p>Actual number of iterations.</p>
+</dd>
+<dt><strong>Error_U_</strong><span class="classifier">list of size self.n_iter_</span></dt><dd><p>Mean sum of square of difference of dict_U_ between current iteration and previous iteration.</p>
+</dd>
+<dt><strong>Error_X_</strong><span class="classifier">list of size self.n_iter_</span></dt><dd><p>Mean sum of square of difference of dict_X_ between current iteration and previous iteration.</p>
+</dd>
+<dt><strong>m_</strong><span class="classifier">int</span></dt><dd><p>number of x_1....x_m, number of unique observed values of X.</p>
+</dd>
+<dt><strong>AIC_</strong><span class="classifier">int</span></dt><dd><p> AIC = 2k - 2ln(L), k be the number of estimated parameters in the model, is it the number of point mass or the number of predictors?</p>
+</dd>
+<dt><strong>BIC_</strong><span class="classifier">int</span></dt><dd><p> kln(n) - 2ln(L), k be the number of estimated parameters in the model, is it the number of point mass or the number of predictors?</p>
 </dd>
 </dl>
 </dd>
