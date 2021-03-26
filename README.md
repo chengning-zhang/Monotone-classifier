@@ -81,7 +81,7 @@ the underlying disease.
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#sklearn.linear_model.LogisticRegression.fit" title="sklearn.linear_model.LogisticRegression.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X, y[, sample_weight])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#sklearn.linear_model.LogisticRegression.fit" title="sklearn.linear_model.LogisticRegression.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X, y)</p></td>
 <td><p>Fit the model according to the given training data.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#sklearn.linear_model.LogisticRegression.get_params" title="sklearn.linear_model.LogisticRegression.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>([deep])</p></td>
