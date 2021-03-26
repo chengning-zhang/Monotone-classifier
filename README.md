@@ -1,6 +1,6 @@
 # Monotone Classifier(MC)
 
-<em class="property">class </em><code class="sig-prename descclassname"></code><code class="sig-name descname">MonotoneClassifier</code>
+<em class="property">class </em></code><code class="sig-name descname">MonotoneClassifier</code>
 <span class="sig-paren">
   (
   </span>
