@@ -29,6 +29,10 @@ the underlying disease.
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl>
+ <dt><strong>tol: </strong><span class="classifier">float, default=1e-7</span></dt><dd><p>Tolerance for stopping criteria.</p>
+</dd>
+<dt><strong>max_iter: </strong><span class="classifier">int, default=300</span></dt><dd><p>Maximum number of iterations taken for the solvers to converge.</p>
+</dd>
 <dt><strong>handle: </strong><span class="classifier">{'missing', 'complete', 'mean', 'median'}, default=’missing’</span></dt><dd><p>Used to specify the method to deal with missing covariates. 'missing' use EM to handle missing X, which is consistent under MAR; 'complete' delete incomplete examples, which causes bias in MAR;
 'mean' impute missing values by mean of that column; 'median' impute missing values by median of that column.</p>
 </dd>
@@ -39,10 +43,6 @@ the underlying disease.
 <dt><strong>init_low: </strong><span class="classifier">float, default=1</span></dt><dd><p>Controls the range of randomly intialized point mass of U and X. Only valid when random_init is True</p>
 </dd>
 <dt><strong>init_high: </strong><span class="classifier">float, default=4</span></dt><dd><p>Controls the range of randomly intialized point mass of U and X. Only valid when random_init is True</p>
-</dd>
-<dt><strong>tol: </strong><span class="classifier">float, default=1e-7</span></dt><dd><p>Tolerance for stopping criteria.</p>
-</dd>
-<dt><strong>max_iter: </strong><span class="classifier">int, default=300</span></dt><dd><p>Maximum number of iterations taken for the solvers to converge.</p>
 </dd>
 </dl>
 </dd>
