@@ -116,3 +116,27 @@ array([[9.8...e-01, 1.8...e-02, 1.4...e-08],
 </dl>
 </dd>
 
+## Built With
+
+* [Dropwizard](https://scikit-learn.org/stable/modules/classes.html) - scikit-learn API
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Chengning Zhang** - *Initial work* - [Simpler TAN + Ensemble TAN](https://github.com/chengning-zhang/Simple-TAN-and-Ensemble-TAN)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
