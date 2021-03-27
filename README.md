@@ -7,7 +7,7 @@ where multiple input variables, whether it be quantitative biomarkers, composite
 or ordinal assessments by radiologists, are often monotonically associated with the probability of
 the underlying disease. 
 
-##
+## Documentation
 
 <em class="property">class </em></code><code class="sig-name descname">MonotoneClassifier</code>
 <span class="sig-paren">
@@ -120,7 +120,6 @@ array([[9.8...e-01, 1.8...e-02, 1.4...e-08],
 
 * [Dropwizard](https://scikit-learn.org/stable/modules/classes.html) - scikit-learn API
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 
 ## Versioning
